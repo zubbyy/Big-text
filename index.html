@@ -1,0 +1,45 @@
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<div id="app">
+    <div class="textContainer">
+      <p id="text">
+        {{text}}
+    </p>
+    </div>
+  
+    
+    <div class="page">
+        
+        <div class="field field_v2">
+          <label for="last-name" class="ha-screen-reader">Last name</label>
+          <input id="last-name" v-model="text" class="field__input" placeholder="WATCH IT G R O W ">
+          <span class="field__label-wrap" aria-hidden="true">
+            <span class="field__label">Write something here, it'll get BIG</span>
+          </span>
+        </div>    
+        
+      </div>
+      <div class="linktr">
+        <a href="https://github.com/zubbyy" target="_blank" class="linktr__goal r-link">Made in an hour in school with ❤️ by me</a>
+      </div>
+</div>
+
+<script src="app.js"></script>
+
+</script>
+<style scoped>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .textContainer{
+      overflow: hidden;
+      word-break: break-all;
+    }
+    body{
+      background-color: #2C6E49;
+    }
+    
+</style>
+<link rel="stylesheet" href="styles/bar.css">
+<link rel="stylesheet" href="styles/style.css">
